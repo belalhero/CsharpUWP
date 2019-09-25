@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="CSharp_Project.ThankYouPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CSharp_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Margin="10,-5,10,0" Height="850">
+    <Grid Style ="{StaticResource GridStyle01}" Margin="10, -5, 10, 5">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="2" Grid.Column="1" x:Name="success" Text="Successfully Purchased !!" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" FontStyle="Italic" Foreground="Green" FontWeight="Bold"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" x:Name="thank" Text="Thank You For Business With Us!!" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontStyle="Italic" Foreground="Purple" FontWeight="Bold"/>
+        <Button x:Name="purchasemore" Grid.Row="4" Grid.Column="1" Content="Shop More" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Green" Foreground="White" FontStyle="Oblique" FontWeight="Bold"/>
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Page>

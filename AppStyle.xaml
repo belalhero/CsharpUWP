@@ -1,0 +1,20 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CSharp_Project">
+    <ImageBrush x:Key="WoodBrush" ImageSource="Image/Wood.jpg"/>
+    <ImageBrush x:Key="WoodBrush01" ImageSource="Image/Wood01.jpg"/>
+    <ImageBrush x:Key="KidBrush" ImageSource="Image/BackGroundKid.jpg"/>
+
+    <Style x:Key="GridStyle" TargetType="Grid">
+        <Setter Property="Background" Value="{StaticResource WoodBrush}"/>
+    </Style>
+    <Style x:Key="GridStyle01" TargetType="Grid">
+        <Setter Property="Background" Value="{StaticResource WoodBrush01}"/>
+    </Style>
+    <Style x:Key="GridStyle2" TargetType="Grid">
+        <Setter Property="Background" Value="{StaticResource KidBrush}"/>
+    </Style>
+
+
+</ResourceDictionary>
